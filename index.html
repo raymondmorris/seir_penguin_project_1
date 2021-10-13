@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>One Piece Quiz</title>
     <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js" defer></script>
+  <script id="fireScript" src="./fireworks.js" defer></script>
 </head>
 <body>
-    <h1>This is my project 1</h1>
+    <h1>Do you know One Piece?</h1>
+    <div id="container">
+        <div id="start">
+            <h3>Ready to play the game?</h3>
+            <button class="start">START</button>
+        </div>
+        <div id="question">
+            
+        </div>
+        <div id="answer-box">
+            <button id="a" class="answer">Answer A</button>
+            <button id="b" class="answer">Answer B</button>
+            <button id="c" class="answer">Answer C</button>
+            <button id="d" class="answer">Answer D</button>
+
+        </div>
+        <div id="winner"> 
+            <h1>THE WINNER IS</h1>
+            <h3>Refresh page to start over or change names.</h3>
+            <button class="restart">PLAY AGAIN?</button>
+            
+        </div>
+    </div>
+    <div id="score">
+        <div class="player1">
+            <h3>Player 1</h3>
+            <h4>0</h4>
+
+        </div>
+        <div class="player2">
+            <h3>Player 2</h3>
+            <h4>0</h4>
+
+        </div>
+    </div>
     
 </body>
 </html>

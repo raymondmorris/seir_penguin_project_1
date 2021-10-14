@@ -60,7 +60,7 @@ body h1 {
     height: 58%;
     padding: .5vw;
     margin: .5vw auto;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 900;
     color: red;
     display: none;
@@ -171,7 +171,7 @@ body h1 {
     outline: 3px dotted green;
     background-color: darkgray;
     border: 2px solid black;
-    height: 50%;
+    height: 30%;
     width: 65%;
     margin: auto;
     display: none;

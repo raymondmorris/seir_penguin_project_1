@@ -20,7 +20,7 @@ body h1 {
 #container {
     border: 2px solid blue;
     background-color: rgba(255, 255, 255, 0.4);
-    height: 60%;
+    height: 65%;
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -57,7 +57,7 @@ body h1 {
     background-size: cover;
     background-position: bottom;
     width: 90%;
-    height: 60%;
+    height: 58%;
     padding: .5vw;
     margin: .5vw auto;
     font-size: 3.5vw;
@@ -69,7 +69,7 @@ body h1 {
 /* Answer box */
 #answer-box {
     width: 70%;
-    height: 40%;
+    height: 42%;
     margin: .5vw auto;
     padding: .5vw;
     display: flex;
@@ -79,7 +79,7 @@ body h1 {
 #answer-box .answer {
     background-color: rgb(168, 57, 24);
     width: 45%;
-    height: 45%;
+    height: 47%;
     margin: auto;
     font-size: 1.8vw;
     font-weight: 900;
@@ -119,6 +119,27 @@ body h1 {
     margin: 0 auto;
 }
 
+#player-selection {
+    border: 2px solid green;
+    background-color: black;
+    color: white;
+    height: 30%;
+    width: 60%;
+    margin: auto;
+}
+#player-selection h3 {
+    margin: 1vw;
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+#player-selection button {
+    width: 14vw;
+    height: 7vh;
+    font-size: 2vw;
+    font-weight: 900;
+    font-family: monospace;
+}
+
 /* Start Game */
 #start {
     border: 2px solid green;
@@ -126,6 +147,7 @@ body h1 {
     height: 35%;
     width: 60%;
     margin: auto;
+    display: none;
 }
 #start h3 {
     margin: 1vw;

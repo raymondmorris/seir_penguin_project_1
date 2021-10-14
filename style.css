@@ -13,7 +13,7 @@ body h1 {
     letter-spacing: .3vw;
     margin: .5vw 1vw 0 1vw;
     padding: auto;
-    color: rgb(168, 57, 24);
+    color: blue;
 }
 
 /* Main container styles */
@@ -60,10 +60,11 @@ body h1 {
     height: 58%;
     padding: .5vw;
     margin: .5vw auto;
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: 900;
-    color: blue;
+    color: red;
     display: none;
+    letter-spacing: .3vw;
 }
 
 /* Answer box */
@@ -77,7 +78,8 @@ body h1 {
     display: none;
 }
 #answer-box .answer {
-    background-color: rgb(168, 57, 24);
+    background-color: black;
+    color: gold;
     width: 45%;
     height: 47%;
     margin: auto;
@@ -312,6 +314,49 @@ canvas#fireworksField {
     canvas#fireworksField{
         height: 20%;
         }
+        #turn {
+            height: 10vh;
+            width: 75%;
+            padding: 6vw;
+        }
+    #turn h1 {
+            font-size: 5vw;
+        }
+    #player-selection {
+            width: 95%;
+        }
+    #player-selection button {
+            width: 60%;
+            height: 25%;
+            margin: 1vw;
+            font-size: 5vw;;
+        }
+    #player-selection h3{
+            font-size: 7vw;
+        }
+    #start {
+            width: 95%;
+            height: 25%;
+        }
+    #start h3 {
+            font-size: 5vw;
+        }
+    #start .start {
+            height: 30%;
+            width: 60%;
+            font-size: 5vw;;
+        }
+    #score div {
+        height: 100%;
+        width: 40%;
+    }
+    #score h3, #score h4, #score h2 {
+        height: 45%;
+        font-size: 4vw;
+    }
+    #score h2 {
+        padding: 6vw;
+    }  
     div#winner {
         height: 30%;
         margin-top: 70vw;

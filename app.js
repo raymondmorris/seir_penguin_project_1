@@ -137,11 +137,11 @@ const setBoard = (q) => {
     $(".counter h2").text(questions.length)
     const name1 = $(".player1 h3").text().toUpperCase()
     const name2 = $(".player2 h3").text().toUpperCase()
-    if(state.player1 === 2 || questions == 0 && state.player1 > state.player2) {
+    if(state.player1 === 10 || questions == 0 && state.player1 > state.player2) {
         $("#winner h1").text(`THE WINNER IS: ${name1}!!`)
         winnerScreen()
 
-    } else if (state.player2 === 2 || questions == 0 && state.player1 < state.player2) {
+    } else if (state.player2 === 10 || questions == 0 && state.player1 < state.player2) {
         $("#winner h1").text(`THE WINNER IS: ${name2}!!`)
         winnerScreen()
 

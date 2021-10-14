@@ -5,14 +5,16 @@
 
 This is a two player trivia game on One Piece. Within the game there is a start, series of questions, and ultimitely a winner (whoever gets to 10 first). 
 
-Created game using HTML, CSS, JS, and jQuery. Once start is hit, the start fucntion disapears and reveals the questions. The questions are randomly generated with user input player names and wil display the score for each player until there is a winner. Which will then display the winner and a new area will display asking them to play again.
+Created game using HTML, CSS, JS, and jQuery. Once start is clicked, the start fucntion disapears and reveals the questions. The questions are randomly generated with user input player names and will display the score for each player until there is a winner. Which will then display a new area with the winner, fireworks at top of page and a play again button to reset the score and questions.
 
 ## Technologies Used
 
 -HTML
 -CSS
 -JS
--jQuery
+-jQuery   
+    
+-Used jQuery fireworks plugin for fireworks above winner from: https://www.jqueryscript.net/animation/Realistic-Fireworks-Animations-Using-jQuery-And-Canvas-fireworks-js.html
 
 
 ## Challenges

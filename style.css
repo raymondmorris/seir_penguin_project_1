@@ -11,7 +11,7 @@ body {
 body h1 {
     font-size: 6vw;
     letter-spacing: .3vw;
-    margin: 4vw 1vw 3vw 1vw;
+    margin: .5vw 1vw 0 1vw;
     padding: auto;
     color: rgb(168, 57, 24);
 }
@@ -20,11 +20,34 @@ body h1 {
 #container {
     border: 2px solid blue;
     background-color: rgba(255, 255, 255, 0.4);
-    height: 60vh;
+    height: 60%;
     width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+/* Correct and Incorrect */
+.correct {
+    outline: 2px dotted green;
+    background-color: black;
+    color: green;
+    height: 8%;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    display: none;
+}
+.incorrect {
+    outline: 2px dotted green;
+    background-color: black;
+    color: rgb(168, 57, 24);
+    height: 8%;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    animation: incorrect 1s, shake 1s;
+    display: none;
 }
 
 /* Question box */
@@ -38,7 +61,7 @@ body h1 {
     padding: .5vw;
     margin: .5vw auto;
     font-size: 3.5vw;
-    font-weight: bold;
+    font-weight: 900;
     color: blue;
     display: none;
 }
@@ -58,7 +81,7 @@ body h1 {
     width: 45%;
     height: 45%;
     margin: auto;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 900;
     letter-spacing: .2vw;
 }
@@ -77,13 +100,23 @@ body h1 {
     color: white;
     height: 10vw;
     width: 35%;
-    margin: .5vw 2vw;
+    margin: .5vw 1vw;
     padding: 1vw;
     font-size: 3vw;
     letter-spacing: .5vw;
 }
 #score h3, h4 {
     margin: 1vw;
+}
+.counter {
+    height: 15vh;
+    width: 15vw;
+    color: gold;
+    font-size: 2.5vw;
+    display: none;
+}
+.counter h2, h4 {
+    margin: 0 auto;
 }
 
 /* Start Game */
@@ -93,7 +126,6 @@ body h1 {
     height: 35%;
     width: 60%;
     margin: auto;
-
 }
 #start h3 {
     margin: 1vw;
@@ -109,6 +141,24 @@ body h1 {
     letter-spacing: .5vw;
     font-family: monospace;
 }
+
+/* Players turn */
+#turn {
+    outline: 3px dotted green;
+    background-color: darkgray;
+    border: 2px solid black;
+    height: 50%;
+    width: 65%;
+    margin: auto;
+    display: none;
+}
+#turn h1 {
+    margin: 2vw;
+    color: black;
+    font-size: 3.5vw;
+}
+
+/* Winners  */
 #winner {
     background-color: darkgray;
     border: 2px solid black;
@@ -116,12 +166,16 @@ body h1 {
     width: 85%;
     margin: auto;
     display: none;
+    transform: scale(1);
+    animation: winner 3s;
 }
 #winner h1 {
     margin: 2vw;
     color: black;
     font-size: 3.5vw;
 }
+
+/* Restart screen */
 .restart {
     background-color: rgb(19, 214, 19);
     height: 20%;
@@ -145,13 +199,100 @@ canvas#fireworksField {
     opacity: 0.6;
 }
 
+@keyframes correct {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes incorrect {
+    0% {
+        background-color: rgb(168, 57, 24);
+    }
+    10% {
+        transform: rotate(2deg);
+    }
+    20% {
+        transform: rotate(-2deg);
+    }
+    30% {
+        transform: rotate(2deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(-2deg);
+    }
+    70% {
+        transform: rotate(2deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes winner {
+    0% {
+        transform: scale(0.0) rotate(0deg);
+    }
+    10% {
+        transform: scale(0.1) rotate(36deg);
+    }
+    20% {
+        transform: scale(0.2) rotate(72deg);
+        /* transform: rotate(72deg); */
+    }
+    30% {
+        transform: scale(0.3) rotate(108deg);
+        /* transform: rotate(108deg); */
+    }
+    40% {
+        transform: scale(0.4) rotate(144deg);
+        /* transform: rotate(144deg); */
+    }
+    50% {
+        transform: scale(0.5) rotate(180deg);
+        /* transform: rotate(180deg); */
+    }
+    60% {
+        transform: scale(0.6) rotate(216deg);
+        /* transform: rotate(216deg); */
+    }
+    70% {
+        transform: scale(0.7) rotate(252deg);
+        /* transform: rotate(252deg); */
+    }
+    80% {
+        transform: scale(0.8) rotate(288deg);
+        /* transform: rotate(288deg); */
+    }
+    90% {
+        transform: scale(0.9) rotate(324deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+    
+}
+
 @media (min-width:300px) and (max-width:500px) {
     canvas#fireworksField{
         height: 20%;
         }
     div#winner {
-        height: 60%;
-        margin-top: 20vw;
+        height: 30%;
+        margin-top: 70vw;
     }
     div#winner h1 {
         font-size: 4vw;
@@ -172,5 +313,8 @@ canvas#fireworksField {
     button#a.answer, button#b.answer, button#c.answer, button#d.answer {
         font-size: 2.8vw;
         width: 50%;
+    }
+    .incorrect, .correct {
+        font-size: 5vw;
     }
     }

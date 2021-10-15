@@ -397,5 +397,8 @@ canvas#fireworksField {
         #container {
             height: 50%;
         }
+        #turn h1 {
+            font-size: 2.5vw;
+        }
         
     }
